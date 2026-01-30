@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+    overflow: hidden;
+}
+
+.table {
+    width: 100%;
+    
+}
+
+.table_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url(../img/a.jpg);
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+.table_header input {
+    width: 500px;
+}
+
+.table_section p{
+    color: #000;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 20px;
+}
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+}
+.add_new {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.panel-control {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 20px;
+    color: #ffffff;
+    background-color: #0298cf;
+}
+
+td button:nth-child(1){
+    background-color: #27c2dd;
+    color: #000;
+}
+
+.view-btn {
+    padding: 7px 8px;
+    background-color: #ffdf00;
+    color: #000;
+    border-radius: 6px;
+}
+.delete-btn {
+    background-color: #f3503a;
+    color: #000;
+}
+
+.cancel-btn {
+    background-color: #f3503a;
+    color: #000;
+}
+
+.add_new {
+    padding: 10px 20px;
+    margin-left: 30px;
+    margin-top: 50px;
+    color: #ffffff;
+    background-color: #0298cf;
+}
+
+input {
+    padding: 10px 20px;
+    margin: 0 10px;
+    outline: none;
+    border: 1px solid #0298cf;
+    border-radius: 6px;
+    color: #0298cf;
+    text-align: center;
+}
+
+/* Estilo personalizado para el campo de selección */
+select {
+    padding: 10px 50px;
+    margin: 0 10px;
+    outline: none;
+    border: 1px solid #0298cf;
+    border-radius: 6px;
+    color: #0298cf;
+    align-items: center;
+}
+
+.table_section {
+    height: 650px;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    min-width: 900px;
+    border-collapse: collapse;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f6f9fc;
+    color: #8493a5;
+    font-size: 15px;
+}
+
+th,td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+}
+
+td img {
+    width: 40%;
+    border-radius: 50%;
+}
+
+tr {
+    font-size: 15px;
+}
+
+tr:hover td {
+    color: #0298cf;
+    background-color: #f6f9fc;
+}
+.edit-form {
+    display: none;
+}
+
+.edit-form td {
+    padding: 5px;
+}
+
+.edit-form input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+ /* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+        
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+        
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+        
+    .close:hover,
+    .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+::placeholder {
+    color: #0298cf;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}

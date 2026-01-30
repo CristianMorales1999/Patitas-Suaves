@@ -1,0 +1,31 @@
+.nav__user{
+    position: relative;
+
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.nav__user:hover{
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.list__show{
+    transition: clip-path .5s;
+    clip-path: var(--clip);
+}
+.user__inside:hover{
+    background-color: #798499;
+}
+.bxs-user-circle::before{
+    font-size: 25px;
+}
+.nav__item{
+    margin-bottom: 1.1rem;    
+    margin-right: 1rem; 
+}
+
+@media screen and (min-width: 1065px) /*PARA PC*/{
+.nav__list{
+    display: flex;
+    padding-top: 1.9rem;
+}
+}
